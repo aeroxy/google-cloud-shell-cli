@@ -126,6 +126,10 @@ cargo clippy --all-targets
    (`0.1.0`, no `v`). A rebuilt zip has a different hash, so rerun step 2
    after any rebuild.
 4. Copy `Formula/gcs.rb` into the `homebrew-tap` repository.
+5. `cargo publish --dry-run`, then `cargo publish`, from the committed and
+   pushed tree (cargo refuses a dirty one). A published crate version is
+   immutable: its metadata, README and files can't be edited, only superseded
+   by a new version, so read `cargo package --list` first.
 
 Unit tests cover precedence, ADC parsing and layout, OAuth redirect handling,
 argument splitting and API error mapping. The Cloud Shell, tunnel and sign-in

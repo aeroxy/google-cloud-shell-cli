@@ -15,8 +15,11 @@ gcs scp -r ./site cs:~/site         # cs: marks Cloud Shell paths
 ## Install
 
 ```sh
-cargo install --path .    # or: make install
+brew install aeroxy/tap/gcs                     # macOS arm64
+cargo install --locked google-cloud-shell-cli   # from crates.io; installs the `gcs` binary
 ```
+
+From a checkout, `cargo install --path .` (or `make install`) does the same.
 
 Needs the OpenSSH client (`ssh`, `scp`) on your `PATH`; gcs runs them for you.
 

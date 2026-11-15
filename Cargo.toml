@@ -1,11 +1,16 @@
 [package]
 name = "google-cloud-shell-cli"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2024"
 rust-version = "1.85"
 description = "Google Cloud Shell from your terminal: ssh, scp and an ssh ProxyCommand, without the gcloud SDK"
 authors = ["Aero <aero.windwalker@gmail.com>"]
 license = "MIT"
+repository = "https://github.com/aeroxy/google-cloud-shell-cli"
+homepage = "https://github.com/aeroxy/google-cloud-shell-cli"
+documentation = "https://github.com/aeroxy/google-cloud-shell-cli#readme"
+keywords = ["google-cloud", "cloud-shell", "gcloud", "ssh", "gcp"]
+categories = ["command-line-utilities", "network-programming"]
 
 [[bin]]
 name = "gcs"
